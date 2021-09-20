@@ -1,0 +1,4 @@
+[submodule "common-workflow"]
+	path = .github/common-workflow
+	url = git@github.com:arnobecksdv/common-workflow.git
+	branch = master
