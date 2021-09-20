@@ -4,11 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           submodules: recursive
+      - uses: actions/checkout@v2
       - name: Use submodule action
         uses: ./.github/common-workflow
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
