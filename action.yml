@@ -4,3 +4,4 @@ runs:
   using: "composite"
   steps:
     - run: echo "🎉 The job was imported from another module !"
+      shell: bash
