@@ -1,8 +1,8 @@
 name: GitHub Actions Common Demo
-on: [push]
-jobs:
-  Common-GitHub-Actions:
-    runs-on: ubuntu-latest
+
+runs:
+  using: "composite"
+  steps:
     steps:
       - run: echo "🎉 The job was imported from another module !"
 
