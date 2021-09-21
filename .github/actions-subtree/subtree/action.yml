@@ -1,0 +1,7 @@
+name: GitHub Actions Common Subtree
+description: Test Common
+runs:
+  using: "composite"
+  steps:
+    - run: echo "🎉 The job was imported from a subtree !"
+      shell: bash
