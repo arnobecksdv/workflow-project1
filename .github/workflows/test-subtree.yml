@@ -9,6 +9,8 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - run: git config --local user.email "$(git log --format='%ae' HEAD^!)"
+      - run: git config --local user.name "$(git log --format='%an' HEAD^!)"
       - run: git remote add -f common-actions https://github.com/arnobecksdv/common-workflow.git
       - run: git fetch common-actions
       - run: git subtree add --prefix .github/actions common-actions master
