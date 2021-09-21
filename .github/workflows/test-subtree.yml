@@ -9,8 +9,9 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - run: git fetch action 
-      - run: git subtree pull --prefix .github/actions git@github.com:arnobecksdv/common-workflow.git master --squash
+      - run: git remote add -f common-actions git@github.com:arnobecksdv/common-workflow.git
+      - run: git fetch common-actions
+      - run: git subtree pull --prefix .github/actions common-actions master --squash
       - uses: actions/checkout@v2
       - run: ls -lah ./.github
       - run: ls -lah ./.github/actions
