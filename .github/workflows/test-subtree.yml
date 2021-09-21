@@ -10,6 +10,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - uses: actions/checkout@v2
+      - run: ls -lah ./.github/actions
       - name: Use subtree action
         uses: ./.github/actions
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
