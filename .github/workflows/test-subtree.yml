@@ -11,6 +11,7 @@ jobs:
           fetch-depth: 0
       - run: git remote add -f common-actions https://github.com/arnobecksdv/common-workflow.git
       - run: git fetch common-actions
+      - run: git subtree add --prefix .github/actions common-actions master
       - run: git subtree pull --prefix .github/actions common-actions master --squash
       - uses: actions/checkout@v2
       - run: ls -lah ./.github
