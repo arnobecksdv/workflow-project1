@@ -3,5 +3,5 @@ description: Test Common
 runs:
   using: "composite"
   steps:
-    - run: echo "🎉 The job was imported from another module !"
+    - run: echo "🎉 The job was imported from a subtree !"
       shell: bash
