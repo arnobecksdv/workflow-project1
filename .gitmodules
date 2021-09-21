@@ -1,0 +1,3 @@
+[submodule ".github/actions-submodule"]
+	path = .github/actions-submodule
+	url = git@github.com:arnobecksdv/common-workflow.git
